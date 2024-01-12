@@ -1,0 +1,105 @@
+<div class="main__content w-100" id="table">
+
+  <h1 class="mb-4">Доходы и расходы</h1>
+  <div class="buttons d-flex mt-5">
+    <button type="button" class="btn btn-success me-3 px-3 py-2" id="add-income">Создать доход
+    </button>
+    <button type="button" class="btn btn-danger" id="add-expense">Создать расход</button>
+  </div>
+  <div class="buttons buttons-intervals d-flex my-5">
+    <button type="button" class="btn border border-secondary-subtle text-secondary me-3 px-3 py-2 period"
+      id="today">Сегодня
+    </button>
+    <button type="button" class="btn border border-secondary-subtle text-secondary me-3 period" id="week">Неделя
+    </button>
+    <button type="button" class="btn border border-secondary-subtle text-secondary me-3 period" id="month">Месяц
+    </button>
+    <button type="button" class="btn border border-secondary-subtle text-secondary me-3 period" id="year">Год
+    </button>
+    <button type="button" class="btn border border-secondary-subtle text-secondary me-3 period" id="all">Все
+      время
+    </button>
+    <button type="button" class="btn border border-secondary-subtle text-secondary me-3 period" id="interval">
+      Интервал
+    </button>
+
+    <div
+      class="px-2 justify-content-center align-items-center d-flex border border-secondary-subtle text-secondary rounded-2 d-none"
+      id="interval-block">
+      <span class="dateFrom">
+        <span class="me-2">с</span>
+        <span class="date text-secondary text-decoration-underline" id="dateFromValue"></span>
+      </span>
+      <span class="dateTo d-flex">
+        <span class="mx-2">по</span>
+        <span class="date text-secondary text-decoration-underline" id="dateToValue"></span>
+      </span>
+    </div>
+  </div>
+
+
+  <!--ТАБЛИЦА-->
+  <table class="table text-center">
+    <thead class="border-top">
+      <tr id="head-table">
+        <th class="id">№ операции</th>
+        <th class="type">Тип</th>
+        <th class="category">Категория</th>
+        <th class="amount">Сумма</th>
+        <th class="date">Дата</th>
+        <th class="comment">Комментарий</th>
+        <th class="actions"></th>
+      </tr>
+    </thead>
+    <tbody id="data-table-body">
+    </tbody>
+  </table>
+
+</div>
+
+<!--МОДАЛЬНОЕ ОКНО ДЛЯ УДАЛЕНИЯ ОПЕРАЦИИ-->
+
+<div class="modal justify-content-center align-items-center bg-dark bg-opacity-75" tabindex="-1" id="deleteModal">
+  <div class="modal-dialog">
+    <div class="modal-content p-4">
+      <p class="modal-body p-0 mb-4">Вы действительно хотите удалить
+        оперцию?</p>
+      <div class="buttons d-flex justify-content-center">
+        <button type="button" class="btn btn-danger me-3" data-bs-dismiss="modal" id="approveDelete">Да, удалить
+        </button>
+        <button type="button" class="btn btn-success" id="cancelDelete">Нет, не удалять</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--МОДАЛЬНОЕ ОКНО BOOTSTRAP-->
+<!--<div class="modal fade justify-content-center align-items-center bg-dark bg-opacity-75" id="operation-deletion" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content p-4">
+      <p class="modal-body p-0 mb-4">Вы действительно хотите удалить
+        оперцию?</p>
+      <div class="buttons d-flex justify-content-center">
+        <button type="button" class="btn btn-danger me-3"
+                data-bs-dismiss="modal" id="approveDelete">Да, удалить
+        </button>
+        <button type="button" class="btn btn-success" id="cancelDelete">Нет, не удалять</button>
+      </div>
+    </div>
+  </div>
+</div>-->
+
+<!--МОДАЛЬНОЕ ОКНО ДЛЯ УСТАНОВКИ ИНТЕРВАЛА-->
+
+<div id="intervalModal" class="interval-modal">
+  <div class="modal-content bg-body border border-light-subtle rounded-4 p-5">
+    <span class="close">&times;</span>
+    <h2>Выберите интервал времени</h2>
+    <label class="fw-bold" for="dateFromInput">Начальная дата:</label>
+    <input class="form-control mb-3 date-input" type="date" id="dateFromInput">
+    <label class="fw-bold" for="dateToInput">Конечная дата:</label>
+    <input class="form-control mb-3 date-input" type="date" id="dateToInput">
+    <button class="btn btn-warning" id="applyBtn">Применить</button>
+  </div>
+</div>

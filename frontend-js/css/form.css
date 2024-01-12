@@ -1,0 +1,53 @@
+html,
+body {
+  /*height: 100%;*/
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.form-control:focus {
+  box-shadow: 0 0 0 transparent;
+}
+
+.input-group {
+  outline: none;
+}
+
+.form-signin {
+  width: 397px;
+}
+
+.input-group {
+  margin-bottom: 10px;
+}
+
+.input-group-text {
+  height: 38px;
+}
+
+.logo {
+ margin-bottom: 60px;
+}
+
+.form-signin input::placeholder {
+  font-size: 15px;
+  color: #6C757D;
+}
+
+.form-signin input[type="checkbox"], .form-signin p {
+  font-size: 12px;
+}
+
+.form-signin button {
+  font-size: 15px;
+}
+
+.sidebar {
+  display: none;
+}

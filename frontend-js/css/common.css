@@ -1,0 +1,203 @@
+@font-face {
+    font-family: 'RobotoRegular';
+    src: url("../fonts/Roboto.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'RobotoMedium';
+    src: url("../fonts/Robotomedium.ttf");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'RobotoBold';
+    src: url("../fonts/Robotobold.ttf");
+    font-weight: 700;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100vh;
+    font-family: "RobotoRegular", sans-serif;
+    font-size: 15px;
+}
+
+h1 {
+    color: #052C65 !important;
+    font-size: 40px;
+    font-family: "RobotoMedium", sans-serif;
+}
+
+h2, .card-title {
+    font-family: "RobotoMedium", sans-serif;
+    font-size: 28px;
+}
+
+.main__content span {
+    font-size: 15px;
+    vertical-align: middle;
+}
+
+
+
+h2, .modal p {
+    color: #290661!important;
+}
+
+
+.nav-link {
+    font-size: 14px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #052C65;
+}
+
+.nav-link.active {
+    color: white;
+}
+
+.nav-link.active svg path {
+    fill: white;
+}
+
+.nav .nav-item:nth-child(3) .nav-link.active svg {
+    transform: rotate(90deg);
+}
+
+.nav-link.balance {
+    font-family: "RobotoMedium", sans-serif;
+}
+
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+.profile-icon {
+    width: 36px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+#profile-full-name {
+    overflow: hidden;
+    max-width: 140px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.main__content {
+    padding: 100px 65px 100px 60px;
+}
+
+.card {
+    height: 121px;
+}
+
+.card-title {
+    overflow: hidden;
+    max-width: 288px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.main__content .buttons {
+    font-size: 14px;
+}
+
+.main__content .col {
+    order: 0;
+}
+
+.main__content .col.new {
+    order: 1;
+}
+
+.main__content a {
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 28px;
+}
+
+.modal p {
+    font-family: "RobotoMedium", sans-serif;
+    font-size: 20px;
+}
+
+thead {
+    font-family: "RobotoBold", sans-serif;
+    color: #052C65;
+}
+
+.interval-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    margin: 15% auto;
+    width: 80%;
+}
+
+.interval-modal .modal-content {
+    width: 40%;
+}
+
+.close {
+    color: #290661;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+}
+
+.close:hover {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+thead th {
+    vertical-align: middle;
+}
+
+.btn.active {
+    background: #6C757D;
+    color: #fff !important;
+}
+
+th.id {
+    width: 105px;
+}
+
+td.col {
+    vertical-align: middle;
+}
+
+#incomeChartCanvas, #expenseChartCanvas {
+    width: 360px!important;
+    height: 360px!important;
+}
+
+.chart {
+    width: 437px;
+    height: 437px;
+}
+
+.line {
+    height: 470px;
+    width: 1px;
+}

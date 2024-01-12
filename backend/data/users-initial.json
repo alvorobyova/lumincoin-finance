@@ -1,0 +1,8 @@
+[{
+  "id": 1,
+  "name": "Пользователь",
+  "lastName": "Айтилогии",
+  "email": "test@itlogia.ru",
+  "password": "$2b$10$34c2o8XD5EHrenfTMolCDuDi8K.mEz9Okkr7LKIp/2X54Nc1PhEM.",
+  "refreshToken": null
+}]

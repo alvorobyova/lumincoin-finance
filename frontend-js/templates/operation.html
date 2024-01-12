@@ -1,0 +1,32 @@
+<div class="main__content w-100" id="operation">
+
+  <h1 class="mb-4 title"></h1>
+  <div class="main__content_items w-50">
+    <div class="mb-3">
+      <select id="typeSelect" class="form-select" >
+        <option value="" disabled>Тип..</option>
+        <option value="income">Доход</option>
+        <option value="expense">Расход</option>
+      </select>
+    </div>
+    <div class="mb-3">
+      <select id="categorySelect" class="form-select" required>
+<!--        <option value="" disabled selected id="categories">Категория..</option>-->
+        <!-- подтягиваются данные в зависимости от того, что выбрано в поле “тип” -->
+      </select>
+    </div>
+    <div class="mb-3">
+      <input type="number" id="amountInput" class="form-control" placeholder="Сумма.." required>
+    </div>
+    <div class="mb-3">
+      <input type="date" id="dateInput" class="form-control" placeholder="Дата.." required>
+    </div>
+    <div class="mb-3">
+      <textarea id="commentTextarea" class="form-control" placeholder="Комментарий.." required></textarea>
+    </div>
+    <div class="buttons d-flex align-content-center mt-4">
+      <button type="button" class="btn btn-success me-3 px-3 py-2 submit"></button>
+      <button type="button" class="btn btn-danger cancel">Отмена</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "user_id": 1,
+    "category_expense_id": null,
+    "category_income_id": 2,
+    "type": "income",
+    "amount": 50000,
+    "date": "2022-09-11",
+    "comment": "ЗП"
+  },
+  {
+    "id": 2,
+    "user_id": 1,
+    "category_expense_id": 2,
+    "category_income_id": null,
+    "type": "expense",
+    "amount": 2500,
+    "date": "2022-09-12",
+    "comment": "Оплата квартиры"
+  },
+  {
+    "id": 3,
+    "user_id": 1,
+    "category_expense_id": 2,
+    "category_income_id": null,
+    "type": "expense",
+    "amount": 250,
+    "date": "2022-09-13",
+    "comment": "Оплата квартиры 2"
+  },
+  {
+    "id": 4,
+    "user_id": 1,
+    "category_expense_id": 2,
+    "category_income_id": null,
+    "type": "expense",
+    "amount": 2400,
+    "date": "2022-08-10",
+    "comment": "Оплата квартиры"
+  },
+  {
+    "id": 5,
+    "user_id": 1,
+    "category_expense_id": 2,
+    "category_income_id": null,
+    "type": "expense",
+    "amount": 400,
+    "date": "2022-07-10",
+    "comment": "Оплата квартиры"
+  },
+  {
+    "id": 6,
+    "user_id": 1,
+    "category_expense_id": 3,
+    "category_income_id": null,
+    "type": "expense",
+    "amount": 2100,
+    "date": "2022-09-05",
+    "comment": "Стоматолог"
+  },
+  {
+    "id": 7,
+    "user_id": 1,
+    "category_expense_id": 3,
+    "category_income_id": null,
+    "type": "expense",
+    "amount": 6000,
+    "date": "2022-04-03",
+    "comment": "Стоматолог"
+  }
+]

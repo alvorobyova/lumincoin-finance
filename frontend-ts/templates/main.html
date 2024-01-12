@@ -1,0 +1,72 @@
+<div class="main__content" id="main">
+  <h1 class="mb-4">Главная</h1>
+  <div class="buttons buttons-intervals d-flex my-5">
+    <button type="button"
+            class="btn border border-secondary-subtle text-secondary me-3 px-3 py-2 period"
+            id="today">Сегодня
+    </button>
+    <button type="button"
+            class="btn border border-secondary-subtle text-secondary me-3 period"
+            id="week">Неделя
+    </button>
+    <button type="button"
+            class="btn border border-secondary-subtle text-secondary me-3 period"
+            id="month">Месяц
+    </button>
+    <button type="button"
+            class="btn border border-secondary-subtle text-secondary me-3 period"
+            id="year">Год
+    </button>
+    <button type="button"
+            class="btn border border-secondary-subtle text-secondary me-3 period"
+            id="all">Все
+      время
+    </button>
+    <button type="button"
+            class="btn border border-secondary-subtle text-secondary me-3 period"
+            id="interval">
+      Интервал
+    </button>
+    <div
+      class="px-2 justify-content-center align-items-center d-flex border border-secondary-subtle text-secondary rounded-2 d-none"
+      id="interval-block">
+    <span class="dateFrom">
+      <span class="me-2">с</span>
+      <span class="date text-secondary text-decoration-underline"
+            id="dateFromValue"></span>
+    </span>
+      <span class="dateTo d-flex">
+      <span class="mx-2">по</span>
+        <span class="date text-secondary text-decoration-underline"
+              id="dateToValue"></span>
+    </span>
+    </div>
+  </div>
+  <div class="charts d-flex align-items-center justify-content-evenly">
+    <div class="chart income d-flex align-items-center justify-content-center flex-column">
+      <h2 class="mb-4">Доходы</h2>
+      <canvas id="incomeChartCanvas"></canvas>
+    </div>
+    <div class="line bg-dark-subtle"></div>
+
+    <div class="chart expense d-flex align-items-center justify-content-center flex-column">
+      <h2 class="mb-4r">Расходы</h2>
+      <canvas class="" id="expenseChartCanvas"></canvas>
+    </div>
+
+  </div>
+
+  <!--МОДАЛЬНОЕ ОКНО ДЛЯ УСТАНОВКИ ИНТЕРВАЛА-->
+  <div id="intervalModal" class="interval-modal">
+    <div class="modal-content bg-body border border-light-subtle rounded-4 p-5">
+      <span class="close">&times;</span>
+      <h2>Выберите интервал времени</h2>
+      <label class="fw-bold" for="dateFromInput">Начальная дата:</label>
+      <input class="form-control mb-3 date-input" type="date" id="dateFromInput">
+      <label class="fw-bold" for="dateToInput">Конечная дата:</label>
+      <input class="form-control mb-3 date-input" type="date" id="dateToInput">
+      <button class="btn btn-warning" id="applyBtn">Применить</button>
+    </div>
+  </div>
+
+</div>
