@@ -1,5 +1,2 @@
-**Система учета расходов/доходов**
-Фронтенд-часть проекта написана в 2 вариантах: на чистом JS и на чистом TS.
-
-Запуск backend -> `npm start`
+Запуск backend -> `npm start` <br>
 Запуск  frontend -> `npm run dev` / `npm run build` 
