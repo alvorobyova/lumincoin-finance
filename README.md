@@ -12,6 +12,7 @@ The layout (desktop only) is implemented using Bootstrap with minimal redefiniti
 
 _All of the above actions are accompanied by http-requests to the server_
 
+<hr>
 
 run backend -> `npm start` <br>
 run  frontend -> `npm run dev` / `npm run build` 
